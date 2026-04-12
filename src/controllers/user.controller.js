@@ -99,7 +99,7 @@ const loginUser = asyncHandler(async(req,res)=>{
          const options = {
             httpOnly:true,
             secure:true
-         }
+         } 
          return res.status(200)
          .cookie("accessToken",accessToken,options)
          .cookie("refreshToken",refreshToken,options)
